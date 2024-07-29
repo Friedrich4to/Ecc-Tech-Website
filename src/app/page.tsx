@@ -1,113 +1,88 @@
+'use client'
+
 import Image from "next/image";
+import { BigBTN } from "./components/buttons";
+import { ServiceBox_Landing } from "./components/service_box";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex flex-col w-full py-16 gap-16 px-5vw xl:px-0 items-center">
+      {/*HERO*/}
+      <div className="flex flex-col items-end lg:flex-row gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+        {/*hero_text_col*/}
+        <div className="w-2-6 h-full flex flex-col gap-12 pb-20">
+          <h1 className="font-black text-5xl lg:text-7xl uppercase">Soluciones Tecnológicas.</h1>
+          <ul className="flex flex-col gap-4">
+            <li className="flex gap-3 items-center"><span className="w-4 h-4 bg-ecc_blue"></span><h1 className="text-ecc_blue text-2xl xl:text-3xl font-normal">Redes de Acceso</h1></li>
+            <li className="flex gap-3 items-center"><span className="w-4 h-4 bg-ecc_blue"></span><h1 className="text-ecc_blue text-2xl xl:text-3xl font-normal">Ciberseguridad</h1></li>
+            <li className="flex gap-3 items-center"><span className="w-4 h-4 bg-ecc_blue"></span><h1 className="text-ecc_blue text-2xl xl:text-3xl font-normal">Servicio en la Nube</h1></li>
+            <li className="flex gap-3 items-center"><span className="w-4 h-4 bg-ecc_blue"></span><h1 className="text-ecc_blue text-2xl xl:text-3xl font-normal">Aplicaciones de Negocios</h1></li>
+          </ul>
+          <BigBTN label='Pongamonos en contacto'/>
+        </div>
+        {/*hero_image_col*/}
+        <div className="w-4-6 h-80s">
+            <video autoPlay muted loop className="object-cover h-full rounded-3xl">
+              <source src='/videos/moving_tech.mp4' type="video/mp4" />
+              Tu navegador no soporta la etiqueta de video.
+          </video>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/*BRANDS*/}
+      <div className="flex justify-between w-full">
+        <div className="w-16 p-4 bg-slate-600 hidden xl:block"></div>
+        <div className="w-full max-w-3xl">
+          <div className="text-center text-lg py-6 text-ecc_gray"><p>Somos Technological Partners de <br />los fabricantes más importantes en el área:</p></div>
+          <div className="grid grid-cols-2 lg:grid-cols-6 items-center justify-center place-items-center gap-2 lg:gap-12">
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+            <div className="h-24 w-full bg-slate-400"></div>
+          </div>
+        </div>
+        <div className="w-16 p-4 bg-slate-600 hidden xl:block"></div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/*VIDEO LOOP*/}
+      <div className="relative w-full h-96 max-w-screen-xl 2xl:max-w-screen-3xl">
+        <h2 className="absolute inset-0 flex items-center justify-center uppercase font-black text-3xl lg:text-7xl text-center z-10 text-ecc_white">
+          Implementaciones <br /> Tecnológicas
+        </h2>
+        <video autoPlay muted loop className="object-cover w-full h-full rounded-3xl">
+          <source src='/videos/moving_tech.mp4' type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
       </div>
+
+      {/*SERVICIOS*/}
+      <div className="flex flex-col items-center gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+        <div className="flex flex-col gap-12 lg:flex-row">
+          <ServiceBox_Landing 
+          title='Implementación de redes de acceso' 
+          paragraph='Diseño e implementación de cableado estructurado y redes inalámbricas que garantizan la conectividad de la empresa.' 
+          image='/images/placeholder.jpg'/>
+          <ServiceBox_Landing 
+          title='Equipos de seguridad informática.' 
+          paragraph='Instalamos de manera profesional hardware y software que protegerá sus datos.' 
+          image='/images/placeholder.jpg'/>
+          <ServiceBox_Landing 
+          title='Automatización de procesos tecnológicos.' 
+          paragraph='Agilizamos los diversos procesos de su empresa, negocio o institución en el apartado de la tecnología.' 
+          image='/images/placeholder.jpg'/>
+        </div>
+        <Link href='/services' className="text-ecc_red text-2xl font-semibold hover:scale-110 transition-all duration-500 border border-ecc_red p-12 rounded-xl">Descubrir todos los servicios</Link>
+      </div>   
     </main>
+    
   );
 }
