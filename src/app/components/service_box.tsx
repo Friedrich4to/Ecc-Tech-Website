@@ -5,9 +5,9 @@ export function ServiceBox_Landing(props){
     return(
     <div className="flex flex-col w-full h-[450px] [&>*]:w-full">
 
-        <div className="h-3/6 flex flex-col gap-4 p-7 bg-ecc_low_blue text-ecc_blue rounded-t-3xl">
+        <div className="h-fit lg:h-3/6 flex flex-col gap-4 p-12 bg-ecc_low_blue text-ecc_blue rounded-t-3xl">
             <h2 className="text-2xl font-extrabold">{props.title}</h2>
-            <p className="text-base">{props.paragraph}</p>
+            <p className="text-base lg:text-xl xl:text-base">{props.paragraph}</p>
         </div>
 
         <div className="h-3/6 relative rounded-b-3xl">
@@ -38,7 +38,7 @@ export function ServiceBox_Services(props){
                     alt='Servicio'>
                 </Image>
             </div>
-            <div className="w-full lg:w-4/6 flex flex-col p-8 rounded-bl-3xl rounded-br-3xl lg:rounded-bl-none lg:rounded-tr-3xl bg-ecc_low_blue text-ecc_blue gap-8">
+            <div className="w-full lg:w-4/6 flex flex-col p-8 rounded-bl-3xl rounded-br-3xl lg:rounded-bl-none lg:rounded-tr-3xl bg-ecc_low_blue text-ecc_blue gap-4 xl:gap-8">
                 <h1 className="text-4xl lg:text-5xl font-bold">{props.title}</h1>
                 <div className="flex flex-col gap-4">
                     <p className="text-lg lg:text-2xl">{props.first_paragraph}</p>

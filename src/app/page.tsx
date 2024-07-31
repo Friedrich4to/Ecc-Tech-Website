@@ -7,12 +7,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full py-16 gap-16 px-5vw xl:px-0 items-center">
+    <main className="flex flex-col w-full py-16 gap-16 px-5vw 2xl:px-0 items-center">
       {/*HERO*/}
-      <div className="flex flex-col items-end lg:flex-row gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+      <div className="flex flex-col xl:items-end xl:flex-row gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
         {/*hero_text_col*/}
-        <div className="w-2-6 h-full flex flex-col gap-12 pb-20">
-          <h1 className="font-black text-5xl lg:text-7xl uppercase">Soluciones Tecnológicas.</h1>
+        <div className="w-2-6 h-full flex flex-col gap-12 xl:pb-20 mt-36 xl:mt-0">
+          <h1 className="font-black text-5xl lg:text-7xl uppercase">Soluciones<br />Tecnológicas.</h1>
           <ul className="flex flex-col gap-4">
             <li className="flex gap-3 items-center"><span className="w-4 h-4 bg-ecc_blue"></span><h1 className="text-ecc_blue text-2xl xl:text-3xl font-normal">Redes de Acceso</h1></li>
             <li className="flex gap-3 items-center"><span className="w-4 h-4 bg-ecc_blue"></span><h1 className="text-ecc_blue text-2xl xl:text-3xl font-normal">Ciberseguridad</h1></li>
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/*SERVICIOS*/}
       <div className="flex flex-col items-center gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
-        <div className="flex flex-col gap-12 lg:flex-row">
+        <div className="flex flex-col gap-4 lg:flex-row">
           <ServiceBox_Landing 
           title='Implementación de redes de acceso' 
           paragraph='Diseño e implementación de cableado estructurado y redes inalámbricas que garantizan la conectividad de la empresa.' 

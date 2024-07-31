@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full py-16 gap-16 px-5vw xl:px-0 items-center">
       {/*HERO*/}
-      <div className="flex flex-col items-end lg:flex-row gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+      <div className="flex flex-col xl:items-end xl:flex-row mt-36 gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
         {/*hero_text_col*/}
-        <div className="lg:w-2/6 flex flex-col gap-12 pb-12">
+        <div className="xl:w-2/6 w-full flex flex-col gap-4 xl:gap-12 xl:pb-12">
           <h1 className="font-black text-5xl lg:text-7xl uppercase">Rodeados de expertos</h1>
           <p className="text-xl">Nuestro equipo es el resultado de cada una de las experiencias adquiridas en el transcurso del desarrollo de ECC Technology y los servicios ofrecidos por nuestra empresa.</p>
         </div>
         {/*hero_image_col*/}
-        <div className="relative lg:w-4/6 h-50s">
+        <div className="relative xl:w-4/6 w-full h-50s">
           <Image
             fill
             src='/images/team.png'
