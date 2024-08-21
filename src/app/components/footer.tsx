@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Email, Ig, Phone, Ubi } from "./icons";
 
 export function Footer(){
     return(      
         <footer className="flex flex-col w-full py-16 gap-16 px-5vw xl:px-0 items-center">
-            <div className="grid grid-cols-1 xl:grid-cols-10 gap-8 w-full py-16 px-5vw border border-ecc_blue rounded-3xl max-w-screen-xl 2xl:max-w-screen-3xl">
+            <div className="grid grid-cols-1 xl:grid-cols-10 gap-8 w-full pt-16 pb-8 px-5vw border border-ecc_blue rounded-3xl max-w-screen-xl 2xl:max-w-screen-3xl">
                 <div className="xl:col-span-3 flex flex-col gap-4">
                     <Link href='/'>
                         <Image
@@ -22,13 +23,13 @@ export function Footer(){
                     <h3 className="text-base font-bold uppercase">Contactos</h3>
                     <ul className="flex flex-col gap-2 font-light text-ecc_blue uppercase">
                         <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
-                        <div className="w-4 h-4 rounded-full bg-ecc_black"></div>809 770 1114
+                        <Phone />809 770 1114
                         </a>
                         <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
-                        <div className="w-4 h-4 rounded-full bg-ecc_black"></div>info@ecc-technology.com
+                        <Email />info@ecc-technology.com
                         </a>
                         <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 hover:text-ecc_red transition-all duration-300">
-                        <div className="w-4 h-4 rounded-full bg-ecc_black"></div>AV. LOS PRÓCERES,<br />NÚM. 10, BLOQUE 3/3, PISO 3,<br />República Dominicana
+                        <Ubi />AV. LOS PRÓCERES,<br />NÚM. 10, BLOQUE 3/3, PISO 3,<br />República Dominicana
                         </a>
                     </ul>
                 </div>
@@ -36,7 +37,7 @@ export function Footer(){
                     <h3 className="text-base font-bold uppercase">Redes sociales</h3>
                     <ul className="flex flex-col gap-2 font-medium text-ecc_blue uppercase">
                         <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
-                        <div className="w-4 h-4 rounded-full bg-ecc_black"></div>Visitar Instagram
+                        <Ig />Visitar Instagram
                         </a>
                     </ul>
                 </div>
@@ -49,6 +50,7 @@ export function Footer(){
                         <Link className="hover:text-ecc_red transition-all duration-300" href='/contact'>Contacto</Link>
                     </ul>
                 </div>
+                <div className="col-span-full text-center pt-8">ECC TECHNOLOGY © 2024 - Todos los derechos reservados.</div>
             </div>
         </footer>
     )

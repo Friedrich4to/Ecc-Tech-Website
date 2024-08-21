@@ -51,20 +51,16 @@ export function ServiceBox_Services(props){
 
 export function Team_Member(props){
     return(
-        <div className="flex flex-col w-full h-50s gap-2">
-            <div className="relative h-4/5 w-full">
+        <div className="flex flex-col w-full h-[50vh] gap-2">
+            <div className="relative h-full w-full">
                 <Image
                 fill
                 src={props.image}
                 quality={80}
                 loading = 'lazy'
                 className="object-cover rounded-3xl"
-                alt='Miembro del equipo'>
+                alt='Miembros del equipo'>
                 </Image>
-            </div>
-            <div className="h-1/5 flex flex-col w-full">
-                <h1 className="text-4xl font-semibold">{props.name}</h1>
-                <span className="text-2xl font-medium uppercase text-ecc_blue">{props.job}</span>
             </div>
         </div>        
     )

@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Footer } from "./components/footer";
 import { Header } from "./components/navbar";
+import { C_CTA } from "./components/contact_cta";
 
 const inter = Space_Grotesk({ subsets: ["latin"] });
 
@@ -22,8 +23,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <C_CTA />
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
