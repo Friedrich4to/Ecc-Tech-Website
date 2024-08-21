@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full py-16 gap-16 px-5vw 2xl:px-0 items-center">
       {/*HERO*/}
-      <div className="flex flex-col xl:items-end xl:flex-row gap-12 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+      <div className="flex flex-col xl:items-end xl:flex-row gap-12 mt-36 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
         {/*hero_text_col*/}
         <div className="w-2-6 h-full flex flex-col gap-12 xl:pb-20 mt-36 xl:mt-0">
           <h1 className="font-black text-5xl lg:text-7xl uppercase">Soluciones<br />Tecnológicas.</h1>
