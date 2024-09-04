@@ -62,7 +62,7 @@ export default function Home() {
       {/*TEAM*/}
       <div className="flex flex-col gap-8 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
         <h2 className="font-black text-3xl uppercase text-ecc_blue">Nuestro equipo de trabajo</h2>
-        <div className="grid grid-cols-2 gap-12 h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 h-full">
           <Team_Member image='/images/team/team_1.jpg' name='' job=''/>
           <Team_Member image='/images/team/team_2.jpg' name='' job=''/>
           <Team_Member image='/images/team/team_3.jpg' name='' job=''/>

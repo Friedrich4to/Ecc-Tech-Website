@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full py-16 gap-16 px-5vw xl:px-0 items-center">
     {/*PAGE_TITLE*/}
-    <div className="flex flex-col items-end lg:flex-row gap-12 mt-36 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+    <div className="flex flex-col lg:flex-row gap-12 mt-36 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
         <h2 className="font-black text-5xl lg:text-7xl uppercase">Pongamonos en contácto</h2>
     </div>
 

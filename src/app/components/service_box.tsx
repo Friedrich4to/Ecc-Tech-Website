@@ -51,7 +51,7 @@ export function ServiceBox_Services(props){
 
 export function Team_Member(props){
     return(
-        <div className="flex flex-col w-full h-[50vh] gap-2">
+        <div className="flex flex-col w-full h-[35vh] lg:h-[50vh] gap-2">
             <div className="relative h-full w-full">
                 <Image
                 fill

@@ -8,9 +8,9 @@ import { Arroba, Cloud, Locker, Pc } from "./components/icons";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full py-16 gap-16 px-5vw 2xl:px-0 items-center">
+    <main className="flex flex-col w-full py-16 gap-16 px-5vw 2xl:px-0 items-center overflow-hidden">
       {/*HERO*/}
-      <div className="flex flex-col xl:items-end xl:flex-row gap-12 mt-36 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
+      <div className="flex flex-col xl:items-end xl:flex-row gap-12 xl:mt-36 w-full h-fit max-w-screen-xl 2xl:max-w-screen-3xl">
         {/*hero_text_col*/}
         <div className="w-2-6 h-full flex flex-col gap-12 xl:pb-20 mt-36 xl:mt-0">
           <h1 className="font-black text-5xl lg:text-7xl uppercase">Soluciones<br />Tecnológicas.</h1>
@@ -23,9 +23,9 @@ export default function Home() {
           <BigBTN label='Pongamonos en contacto' url='/contact'/>
         </div>
         {/*hero_image_col*/}
-        <div className="w-4-6 h-80s">
+        <div className="w-4-6 h-[70vh]">
             <video autoPlay muted loop className="object-cover h-full rounded-3xl">
-              <source src='/videos/moving_tech.mp4' type="video/mp4" />
+              <source src='/videos/datavid.mp4' type="video/mp4" />
               Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <div className="w-full max-w-3xl">
           <div className="text-center text-lg py-6 text-ecc_gray"><p>Somos Technological Partners de <br />los fabricantes más importantes en el área:</p></div>
-          <div className="grid grid-cols-2 lg:grid-cols-6 items-center justify-center place-items-center gap-2 lg:gap-12">
+          <div className="grid grid-cols-2 lg:grid-cols-6 items-center justify-center place-items-center px-8 gap-2 lg:gap-12">
             <div className="h-24 w-full flex items-center"><img src="./colabs/icon_panasonic.png" alt="" /></div>
             <div className="h-24 w-full flex items-center"><img src="./colabs/icon_fortinet.png" alt="" /></div>
             <div className="h-24 w-full flex items-center"><img src="./colabs/icon_leviton.png" alt="" /></div>

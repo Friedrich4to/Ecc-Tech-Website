@@ -22,13 +22,13 @@ export function Footer(){
                 <div className="xl:col-span-3 flex flex-col gap-6">
                     <h3 className="text-base font-bold uppercase">Contactos</h3>
                     <ul className="flex flex-col gap-2 font-light text-ecc_blue uppercase">
-                        <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
+                        <a href="https://wa.me/18097701114" target="_blank" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
                         <Phone />809 770 1114
                         </a>
-                        <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
+                        <a href="mailto:info@ecc-technology.com" target="_blank" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
                         <Email />info@ecc-technology.com
                         </a>
-                        <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 hover:text-ecc_red transition-all duration-300">
+                        <a href="https://maps.app.goo.gl/pNhiWe3Tv65hghve7" target="_blank" className="flex gap-2 hover:text-ecc_red transition-all duration-300">
                         <Ubi />AV. LOS PRÓCERES,<br />NÚM. 10, BLOQUE 3/3, PISO 3,<br />República Dominicana
                         </a>
                     </ul>
@@ -36,7 +36,7 @@ export function Footer(){
                 <div className="xl:col-span-2 flex flex-col gap-6">
                     <h3 className="text-base font-bold uppercase">Redes sociales</h3>
                     <ul className="flex flex-col gap-2 font-medium text-ecc_blue uppercase">
-                        <a href="https://www.instagram.com/ecc.technology/" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
+                        <a href="https://www.instagram.com/ecc.technology/" target="_blank" className="flex gap-2 items-center hover:text-ecc_red transition-all duration-300">
                         <Ig />Visitar Instagram
                         </a>
                     </ul>
